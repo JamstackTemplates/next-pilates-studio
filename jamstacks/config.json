@@ -1,0 +1,15 @@
+{
+  "name": "Long Line Pilates",
+  "description": "Minimal, sculptural Pilates studio, with reformer/mat classes, packs and a first-class guide.",
+  "tech": "next",
+  "type": "pilates",
+  "style": "studio",
+  "internal": false,
+  "components": ["support-form"],
+  "configFile": "site.config.json",
+  "screenshots": {
+    "light": "jamstacks/home-light.jpg",
+    "dark": "jamstacks/home-dark.jpg",
+    "theme": { "strategy": "media" }
+  }
+}

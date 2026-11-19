@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#2457a7"/><path d="M17 20h30v24H17zM24 14v36M40 14v36" fill="none" stroke="#fff" stroke-width="4"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" fill="#F1EEE8"/>
+  <!-- Small spring coil centred in the frame -->
+  <path
+    d="M17 26C17 21.5 47 21.5 47 26C47 30.5 17 28 17 32C17 36 47 33.5 47 38C47 42.5 17 42.5 17 38"
+    stroke="#22201C"
+    stroke-width="2.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Single vertical brass Long Line passing cleanly through the coil -->
+  <line x1="32" y1="6" x2="32" y2="58" stroke="#A9874E" stroke-width="3"/>
+  <circle cx="32" cy="11" r="2.2" fill="#A9874E"/>
+  <circle cx="32" cy="53" r="2.2" fill="#A9874E"/>
+</svg>

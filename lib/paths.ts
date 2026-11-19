@@ -9,12 +9,14 @@ export function asset(path: string): string {
   return `${site.basePath}${path}`;
 }
 
-/** Ensure a site route ends with a trailing slash to match the static export layout. */
+/** Ensure a site route ends with a trailing slash to match the static export layout, preserving query and hash. */
 export function route(path: string): string {
   if (!path.startsWith('/')) throw new Error(`Routes must start with "/": ${path}`);
-  const [pathname, hash] = path.split('#', 2);
+  const [beforeHash, hash] = path.split('#', 2);
+  const [pathname, search] = beforeHash.split('?', 2);
   const withSlash = pathname.endsWith('/') ? pathname : `${pathname}/`;
-  return hash ? `${withSlash}#${hash}` : withSlash;
+  const withSearch = search !== undefined ? `${withSlash}?${search}` : withSlash;
+  return hash !== undefined ? `${withSearch}#${hash}` : withSearch;
 }
 
 /** Full-document href for a site route, including the base path. */
@@ -35,4 +37,3 @@ export function isContactRoute(path: string | null | undefined): boolean {
   const pathname = path.split(/[?#]/, 1)[0];
   return route(pathname) === CONTACT_ROUTE;
 }
-

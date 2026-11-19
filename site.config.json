@@ -1,7 +1,8 @@
 {
-  "name": "Jamstacks starter",
-  "description": "A neutral Next.js foundation for Jamstacks websites.",
-  "domain": "",
+  "name": "Long Line Pilates",
+  "description": "Small-group reformer and mat Pilates at the foot of Primrose Hill, with class packs and a clear guide to your first session.",
+  "domain": "next-pilates-studio.jamstacks.net",
+  "timeZone": "Europe/London",
   "jamstacks": {
     "siteId": "",
     "cdnUrl": "https://cdn.jamstacks.net"
