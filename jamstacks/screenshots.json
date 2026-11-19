@@ -1,0 +1,22 @@
+{
+  "templateId": "next-pilates-studio",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "fullPage": false,
+  "captures": [
+    {
+      "mode": "light",
+      "sha256": "eeddca3bfda29984b11c351f569c3e8cbf7a92e511b6e552263a4693a8612778",
+      "file": "jamstacks/home-light.jpg",
+      "bytes": 96458
+    },
+    {
+      "mode": "dark",
+      "sha256": "7e68f5a5fca7410896008ed6d8372fecb13d271874fdb972ea6de6fd1a5dff05",
+      "file": "jamstacks/home-dark.jpg",
+      "bytes": 94591
+    }
+  ]
+}
